@@ -1,0 +1,78 @@
+{
+  "layer": "top",
+  "position": "left", 
+  "width": 43,
+  "modules-left": ["custom/menu", "hyprland/workspaces"],
+//  "modules-center": ["cava"],
+  "modules-right": ["tray", "pulseaudio", "pulseaudio#percentage", "clock", "clock#date", "clock#time"],
+// Modules configuration
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "sort-by": true,
+    "format-icons": {
+            "1": "",
+            "2": "󰈹",
+            "3": "󰉋",
+            "4": "󰝚",
+            "5": "󰙯",
+            "6": "󰨞",
+            "7": "󰎶",
+            "8": "󰎹",
+            "9": "󰎼",
+            "99": ""
+         }
+     },
+  
+  "network": {
+    "format-wifi": "",
+    "format-ethernet": "",
+    "format-linked": "",
+    "format-disconnected": "",
+	  "tooltip-format-wifi": "{essid}",
+	  "tooltip-format-disconnected": "Disconnected",
+    "max-length": 3
+  },
+  
+  "pulseaudio": {
+	"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+	"format": "{icon}",
+    "format-muted": "",
+    "format-icons": {
+        "default": ["󰕾", ""]
+    }
+  },
+  "pulseaudio#percentage": {
+	"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+	"format": "{volume}"
+  },
+  
+  "custom/brightness-icon": {
+    "format": "",
+    "tooltip": false
+  },
+ 
+  "clock": {
+	"format": "{:%a}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+
+  "clock#date": {
+	"format": "{:%d}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  
+  "clock#time": {
+	"format": "{:%H\n%M}"
+  },
+
+  "tray": {
+  "icon-size": 21,
+  "spacing": 10
+  },
+
+  "custom/menu": {
+    "format": "󰣇",
+    "on-click": "wofi --show drun"
+  }
+}

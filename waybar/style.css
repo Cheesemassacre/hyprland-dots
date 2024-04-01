@@ -1,0 +1,92 @@
+* {
+  font-family: 'SymbolsNerdFont','Source Code Pro';
+}
+
+window#waybar {
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1.0;
+  color: #cdd6f4;
+}
+
+tooltip {
+  background: #1e1e2e;
+  border-radius: 15px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #89b4fa;
+  font-size: 13.5pt;
+}
+
+tooltip label {
+  padding: 7px;
+}
+
+#workspaces {
+  font-size: 18pt;
+  padding-top: 5px;
+}
+
+#workspaces button {
+  color: #FFF7FC;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+#workspaces button.active {
+  color: #5755FE;
+}
+
+
+#network {
+  padding-bottom: 15px;
+  font-size: 18pt;
+  color: #94e2d5;
+}
+
+
+#pulseaudio {
+  color: #FF71CD;
+  font-size: 18pt;
+  padding-bottom: 5px;
+  /* background-color: #5755FE; */
+}
+
+#pulseaudio.percentage {
+  font-size: 13.5pt;
+  padding-bottom: 15px;
+  color: #FFF7FC;
+  /* background-color: #5755FE; */
+}
+
+
+#clock {
+  font-size: 13.5pt;
+  color: #FFF7FC;
+}
+
+#clock.date {
+  padding-top: 1px;
+  font-size: 13.5pt;
+  color: #FFF7FC;
+  padding-bottom: 15px;
+}
+
+
+#clock.time {
+  padding-bottom: 15px;
+  font-size: 13.5pt;
+  color: #FFF7FC;
+}
+
+#tray {
+  padding-bottom: 15px;
+  
+}
+
+#custom-menu {
+  padding-top: 2px;
+  padding-bottom: 4px;
+  font-size: 18pt;
+  background-color: #5755FE;
+}
