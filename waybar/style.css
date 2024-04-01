@@ -88,5 +88,9 @@ tooltip label {
   padding-top: 2px;
   padding-bottom: 4px;
   font-size: 18pt;
+  border-color: #cdd6f4;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
   background-color: #5755FE;
 }
