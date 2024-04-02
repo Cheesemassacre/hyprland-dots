@@ -1,10 +1,10 @@
 {
   "layer": "top",
   "position": "left", 
-  "width": 43,
+  "width": 48,
   "modules-left": ["custom/menu", "hyprland/workspaces"],
 //  "modules-center": ["cava"],
-  "modules-right": ["tray", "pulseaudio", "pulseaudio#percentage", "clock", "clock#date", "clock#time"],
+  "modules-right": ["tray", "custom/pulse", "pulseaudio", "clock#date", "clock#time"],
 // Modules configuration
   "hyprland/workspaces": {
     "format": "{icon}",
@@ -35,13 +35,27 @@
   },
   
   "pulseaudio": {
-	"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-	"format": "{icon}",
-    "format-muted": "",
+    "format": "{volume}%",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-muted": "",
     "format-icons": {
-        "default": ["󰕾", ""]
-    }
+        "headphone": "",
+        "hands-free": "",
+        "headset": "",
+        "phone": "",
+        "portable": "",
+        "car": "",
+        "default": ["", ""]
+    },
+    "scroll-step": 1,
+    "on-click": "pavucontrol",
+    "ignored-sinks": ["Easy Effects Sink"]
   },
+
+  "custom/pulse": {
+    "format": "󰕾"
+  },
+
   "pulseaudio#percentage": {
 	"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
 	"format": "{volume}"
@@ -58,7 +72,7 @@
   },
 
   "clock#date": {
-	"format": "{:%d}",
+	"format": "{:%a\n%d}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
   
@@ -74,5 +88,11 @@
   "custom/menu": {
     "format": "󰣇",
     "on-click": "wofi --show drun"
+  },
+
+  "pulseaudio/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "vertical"
   }
 }

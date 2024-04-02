@@ -3,10 +3,16 @@
 }
 
 window#waybar {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 1.0);
   opacity: 1.0;
   color: #cdd6f4;
+  
+
+  
+
+
 }
+
 
 tooltip {
   background: #1e1e2e;
@@ -27,14 +33,14 @@ tooltip label {
 }
 
 #workspaces button {
-  color: #FFF7FC;
+  color: #edf2fb;
   padding-top: 10px;
   padding-bottom: 10px;
   
 }
 
 #workspaces button.active {
-  color: #5755FE;
+  color: #8093f1;
   font-size: 20pt;
 }
 
@@ -47,49 +53,123 @@ tooltip label {
 
 
 #pulseaudio {
-  color: #FF71CD;
-  font-size: 18pt;
+  color: #000000;
+  font-size: 13.5pt;
   padding-bottom: 5px;
-  /* background-color: #5755FE; */
+  background-color: #efd3d7; 
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-bottom: 10px;
+  margin-right: 4px;
+  margin-left: 4px;
+  
+  
+
+
 }
 
 #pulseaudio.percentage {
   font-size: 13.5pt;
-  padding-bottom: 15px;
-  color: #FFF7FC;
-  /* background-color: #5755FE; */
+  color: #000000;
+  background-color: #efd3d7; 
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-top: 1px;
+  margin-bottom: 10px;
+  margin-right: 4px;
+  margin-left: 4px;
+
 }
 
 
 #clock {
   font-size: 13.5pt;
   color: #FFF7FC;
+  background-color: #212529; 
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-bottom: 10px;
+  margin-right: 4px;
+  margin-left: 4px;
+
 }
 
 #clock.date {
   padding-top: 1px;
   font-size: 13.5pt;
-  color: #FFF7FC;
-  padding-bottom: 15px;
+  color: #000000;
+  background-color: #feeafa; 
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-right: 4px;
+  margin-left: 4px;
+
 }
 
 
 #clock.time {
-  padding-bottom: 15px;
   font-size: 13.5pt;
-  color: #FFF7FC;
+  color: #000000;
+  background-color: #dee2ff; 
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-bottom: 10px;
+  margin-right: 4px;
+  margin-left: 4px;
+  
+
 }
 
 #tray {
-  padding-bottom: 15px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  background-color: #8e9aaf; 
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-bottom: 10px;
+  margin-right: 4px;
+  margin-left: 4px;
+
+
   
 }
 
 #custom-menu {
   padding-top: 2px;
   padding-bottom: 4px;
-  font-size: 18pt;
+  font-size: 22pt;
   border: 2px solid rgba(0, 0, 0, 0.0);
   border-radius: 5px;
-  background-color: #5755FE;
+  background-color: #dfe7fd;
+  color: #000000;
+  margin-right: 4px;
+  margin-left: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  
+  
+}
+
+
+#custom-pulse {
+  color: #000000;
+  font-size: 16pt;
+  padding-bottom: 5px;
+  background-color: #efd3d7; 
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  margin-right: 4px;
+  margin-left: 4px;
+  
+
+  
+  
 }
