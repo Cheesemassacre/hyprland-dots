@@ -1,51 +1,57 @@
 {
   "layer": "top",
-  "position": "left", 
+  "position": "left",
   "width": 48,
   "modules-left": ["custom/menu", "hyprland/workspaces"],
-//  "modules-center": ["cava"],
-  "modules-right": ["tray", "custom/pulse", "pulseaudio", "clock#date", "clock#time"],
-// Modules configuration
+  //  "modules-center": ["cava"],
+  "modules-right": [
+    "tray",
+    "custom/pulse",
+    "pulseaudio",
+    "clock#date",
+    "clock#time"
+  ],
+  // Modules configuration
   "hyprland/workspaces": {
     "format": "{icon}",
     "on-click": "activate",
     "sort-by": true,
     "format-icons": {
-            "1": "",
-            "2": "󰈹",
-            "3": "󰉋",
-            "4": "󰝚",
-            "5": "󰙯",
-            "6": "󰨞",
-            "7": "󰎶",
-            "8": "󰎹",
-            "9": "󰎼",
-            "99": ""
-         }
-     },
-  
+      "1": "",
+      "2": "󰈹",
+      "3": "󰉋",
+      "4": "󰝚",
+      "5": "󰙯",
+      "6": "󰨞",
+      "7": "󰎶",
+      "8": "󰎹",
+      "9": "󰎼",
+      "99": ""
+    }
+  },
+
   "network": {
     "format-wifi": "",
     "format-ethernet": "",
     "format-linked": "",
     "format-disconnected": "",
-	  "tooltip-format-wifi": "{essid}",
-	  "tooltip-format-disconnected": "Disconnected",
+    "tooltip-format-wifi": "{essid}",
+    "tooltip-format-disconnected": "Disconnected",
     "max-length": 3
   },
-  
+
   "pulseaudio": {
     "format": "{volume}%",
     "format-bluetooth": "{volume}% {icon}",
     "format-muted": "",
     "format-icons": {
-        "headphone": "",
-        "hands-free": "",
-        "headset": "",
-        "phone": "",
-        "portable": "",
-        "car": "",
-        "default": ["", ""]
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", ""]
     },
     "scroll-step": 1,
     "on-click": "pavucontrol",
@@ -57,32 +63,32 @@
   },
 
   "pulseaudio#percentage": {
-	"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-	"format": "{volume}"
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "format": "{volume}"
   },
-  
+
   "custom/brightness-icon": {
     "format": "",
     "tooltip": false
   },
- 
+
   "clock": {
-	"format": "{:%a}",
+    "format": "{:%a}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
 
   "clock#date": {
-	"format": "{:%a\n%d}",
+    "format": "{:%a\n%d}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
-  
+
   "clock#time": {
-	"format": "{:%H\n%M}"
+    "format": "{:%H\n%M}"
   },
 
   "tray": {
-  "icon-size": 21,
-  "spacing": 10
+    "icon-size": 21,
+    "spacing": 10
   },
 
   "custom/menu": {

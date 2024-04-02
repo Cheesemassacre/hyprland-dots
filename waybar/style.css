@@ -1,18 +1,12 @@
 * {
-  font-family: 'SymbolsNerdFont','Source Code Pro';
+  font-family: "SymbolsNerdFont", "Source Code Pro";
 }
 
 window#waybar {
-  background: rgba(0, 0, 0, 1.0);
-  opacity: 1.0;
+  background: rgba(0, 0, 0, 1);
+  opacity: 1;
   color: #cdd6f4;
-  
-
-  
-
-
 }
-
 
 tooltip {
   background: #1e1e2e;
@@ -36,7 +30,6 @@ tooltip label {
   color: #edf2fb;
   padding-top: 10px;
   padding-bottom: 10px;
-  
 }
 
 #workspaces button.active {
@@ -44,132 +37,94 @@ tooltip label {
   font-size: 20pt;
 }
 
-
 #network {
   padding-bottom: 15px;
   font-size: 18pt;
   color: #94e2d5;
 }
 
-
 #pulseaudio {
   color: #000000;
   font-size: 13.5pt;
   padding-bottom: 5px;
-  background-color: #efd3d7; 
+  background-color: #efd3d7;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   margin-bottom: 10px;
   margin-right: 4px;
   margin-left: 4px;
-  
-  
-
-
 }
 
 #pulseaudio.percentage {
   font-size: 13.5pt;
   color: #000000;
-  background-color: #efd3d7; 
+  background-color: #efd3d7;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   margin-top: 1px;
   margin-bottom: 10px;
   margin-right: 4px;
   margin-left: 4px;
-
 }
-
 
 #clock {
   font-size: 13.5pt;
-  color: #FFF7FC;
-  background-color: #212529; 
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  color: #fff7fc;
+  background-color: #212529;
+  border-radius: 5px;
   margin-bottom: 10px;
   margin-right: 4px;
   margin-left: 4px;
-
 }
 
 #clock.date {
   padding-top: 1px;
   font-size: 13.5pt;
   color: #000000;
-  background-color: #feeafa; 
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  background-color: #feeafa;
+  border-radius: 5px;
   margin-right: 4px;
   margin-left: 4px;
-
 }
-
 
 #clock.time {
   font-size: 13.5pt;
   color: #000000;
-  background-color: #dee2ff; 
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  background-color: #dee2ff;
+  border-radius: 5px;
   margin-bottom: 10px;
   margin-right: 4px;
   margin-left: 4px;
-  
-
 }
 
 #tray {
   padding-bottom: 2px;
   padding-top: 2px;
-  background-color: #8e9aaf; 
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  background-color: #8e9aaf;
+  border-radius: 5px;
   margin-bottom: 10px;
   margin-right: 4px;
   margin-left: 4px;
-
-
-  
 }
 
 #custom-menu {
   padding-top: 2px;
   padding-bottom: 4px;
   font-size: 22pt;
-  border: 2px solid rgba(0, 0, 0, 0.0);
+  border: 2px solid rgba(0, 0, 0, 0);
   border-radius: 5px;
   background-color: #dfe7fd;
   color: #000000;
-  margin-right: 4px;
-  margin-left: 4px;
-  margin-top: 4px;
-  margin-bottom: 4px;
-  
-  
+  margin: 4px;
 }
-
 
 #custom-pulse {
   color: #000000;
   font-size: 16pt;
   padding-bottom: 5px;
-  background-color: #efd3d7; 
+  background-color: #efd3d7;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   margin-right: 4px;
   margin-left: 4px;
-  
-
-  
-  
 }
