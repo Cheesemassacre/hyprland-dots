@@ -8,7 +8,10 @@
     "tray",
     "custom/pulse",
     "pulseaudio",
-    "clock#date",
+    "custom/memory",
+    "memory",
+    "custom/cpu",
+    "cpu",
     "clock#time"
   ],
   // Modules configuration
@@ -83,7 +86,29 @@
   },
 
   "clock#time": {
-    "format": "{:%H\n%M}"
+    "format": "{:%H\n%M}",
+    "tooltip-format": "\n<span size='9pt' font='Source Code Pro'>{calendar}</span>",
+        "calendar": {
+                    "mode"          : "year",
+                    "mode-mon-col"  : 3,
+                    "weeks-pos"     : "right",
+                    "on-scroll"     : 1,
+                    "on-click-right": "mode",
+                    "format": {
+                              "months":     "<span color='#ffead3'><b>{}</b></span>",
+                              "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                              "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                              "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                              "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+                              }
+                    },
+        "actions":  {
+                    "on-click-right": "mode",
+                    "on-click-forward": "tz_up",
+                    "on-click-backward": "tz_down",
+                    "on-scroll-up": "shift_up",
+                    "on-scroll-down": "shift_down"
+                    }
   },
 
   "tray": {
@@ -100,5 +125,26 @@
     "min": 0,
     "max": 100,
     "orientation": "vertical"
+  },
+
+  "cpu": {
+    "interval": 2,
+    "format": "{usage}%",
+    "max-length": 10
+  },
+
+  "custom/cpu": {
+    "format": ""
+  },
+
+  "memory": {
+    "interval": 5,
+    "format": "{percentage}%",
+    "max-length": 10
+  },
+
+  "custom/memory": {
+    "format": ""
   }
+
 }

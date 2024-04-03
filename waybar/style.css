@@ -1,5 +1,5 @@
 * {
-  font-family: "SymbolsNerdFont", "Source Code Pro";
+  font-family: "SymbolsNerdFont", "Noto Sans Mono";
 }
 
 window#waybar {
@@ -28,14 +28,19 @@ tooltip label {
 
 #workspaces button {
   color: #edf2fb;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin: 4px;
 }
 
 #workspaces button.active {
   color: #8093f1;
   font-size: 20pt;
+  background: rgba(58, 58, 58, 0.7);
+  border-radius: 5px;
+  margin: 4px;
 }
+
 
 #network {
   padding-bottom: 15px;
@@ -121,8 +126,58 @@ tooltip label {
 #custom-pulse {
   color: #000000;
   font-size: 16pt;
-  padding-bottom: 5px;
+  padding-bottom: 2px;
   background-color: #efd3d7;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+#cpu {
+  color: #000000;
+  font-size: 13.5pt;
+  padding-bottom: 2px;
+  background-color: #CCD3CA;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-right: 4px;
+  margin-left: 4px;
+  margin-bottom: 10px;
+
+}
+
+#custom-cpu {
+  color: #000000;
+  font-size: 13.5pt;
+  padding-bottom: 2px;
+  padding-top: 4px;
+  background-color: #CCD3CA;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+#memory {
+  color: #000000;
+  font-size: 13.5pt;
+  padding-bottom: 2px;
+  background-color: #E1AFD1;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-right: 4px;
+  margin-left: 4px;
+  margin-bottom: 10px;
+
+}
+
+#custom-memory {
+  color: #000000;
+  font-size: 13.5pt;
+  padding-bottom: 2px;
+  padding-top: 4px;
+  background-color: #E1AFD1;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   margin-right: 4px;
