@@ -142,10 +142,10 @@
 ### Text layout
 #
 	# Prompt to display.
-	prompt-text = " > "
+	prompt-text = "> "
 
 	# Extra horizontal padding between prompt and input.
-	prompt-padding = 20
+	prompt-padding = 0
 
 	# Placeholder input text.
 	placeholder-text = ""
